@@ -1,0 +1,144 @@
+// colors
+$nav-color: var(--theme-secondary);
+$nav-active-color: var(--theme-primary);
+
+// fonts
+$nav-font: $--mono;
+$nav-font-size: 1.2rem;
+$nav-font-active-size: 1.5rem;
+$nav-font-hover-size: 1.5rem;
+$mobile-nav-font-size: 1.8rem;
+
+// padding
+$hand-length: 30px;
+$hand-padding-right: 5px;
+$nav-line-height: 1.8;
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  ul#main-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    a {
+      font-family: $nav-font;
+      font-size: $nav-font-size;
+      line-height: $nav-line-height;
+      text-decoration: none;
+      color: $nav-color;
+      transition: all 0.3s ease;
+      display: block;
+      padding-inline-start: $hand-length+$hand-padding-right;
+      position: relative;
+
+      &:hover {
+        font-size: $nav-font-hover-size;
+        color: $nav-active-color;
+      }
+  
+      &::before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: $nav-active-color;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -1px;
+        transition: all 0.3s ease;
+      }
+    }
+      
+    a.active, .active > a {
+      font-size: $nav-font-active-size;
+      color: $nav-active-color;
+      pointer-events: none;
+      cursor: default;
+  
+      &::before {
+        width: $hand-length;
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  nav {
+    top: 0;
+    transform: none;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    margin: 0;
+    padding: 0;
+
+    // styling
+    opacity: 0;
+    background-color: transparent;
+    transition: all 0.5s ease-out;
+    
+    &.active {
+      opacity: 0.9;
+      background-color: var(--theme-background);
+      transition: all 0.5s ease-in;
+      z-index: 999;
+    }
+
+    ul#main-nav {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      font-size: $mobile-nav-font-size;
+
+      a {
+        position: relative;
+        padding: 0;
+        line-height: 1.5;
+        font-size: $mobile-nav-font-size;
+
+        &.active {
+          font-size: $mobile-nav-font-size;
+          line-height: 1.5;
+        }
+        
+        &:hover {
+          font-size: $mobile-nav-font-size;
+          line-height: 1.5;
+        }
+
+        // clear line before
+        &::before {
+          display: none;
+          content: none;
+          position: relative;
+        }
+      }
+
+      .link-icons {
+        position: relative;
+        display: inline;
+        font-size: $mobile-nav-font-size;
+
+        li {
+          display: inline-block;
+          margin: 0.5em 0.2em;
+          font-size: inherit;
+        }
+
+        // clear line after
+        &::after {
+          display: none;
+          content: none;
+          position: relative;
+        }
+      }
+    }
+  }
+}

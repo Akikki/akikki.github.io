@@ -1,0 +1,115 @@
+$marker-color: var($--theme-primary);
+$list-padding: 1.5em;
+$grid-break-point: 1200px;
+$grid-col-gap: 1em;
+$transition-duration: 0.5s;
+
+/* Naked list */
+@mixin my-ul {
+  list-style: none;
+  list-style-position: inside;
+  padding-inline-start: 0;
+  position: relative;
+  margin: 0;
+}
+@mixin my-li {
+  padding-top: 0.3em; 
+  padding-bottom: 0.3em;
+}
+.naked-list {
+  @include my-ul;
+  li {
+    @include my-li;
+  }
+}
+
+/* Unordered list with custom marker */
+ul.list, .list-container ul, .tab-content ul {
+  @include my-ul;
+  li {
+    position: relative;
+    padding-left: $list-padding;
+    @include my-li;
+    &::before { // custom marker
+      content: "▷";
+      color: $marker-color;
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+ul.list ul {
+  @include my-ul;
+}
+
+/* redefine h* in list contexts, this should move though */
+.list, .list-container {
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--theme-secondary);
+    font-size: 1.3em;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 0.5em;
+  }
+}
+
+/* Grid layout */
+ul.grid-list {
+  @media (min-width: $grid-break-point) {
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - #{0.5 * $grid-col-gap}));
+    -moz-columns: 2;
+    -webkit-columns: 2;
+    columns: 2;
+    -moz-column-gap: $grid-col-gap;
+    -webkit-column-gap: $grid-col-gap;
+    column-gap: $grid-col-gap;
+  }
+}
+
+/* Collapsible nested ul */
+ul.collapsible li {
+  cursor: pointer;
+  height: fit-content;
+  &::before {
+    transform: rotate(0);
+    transition: transform $transition-duration ease;
+  }
+  & > ul {
+    height: 0;
+    overflow: hidden;
+    transition: height $transition-duration ease;
+  }
+  &.active::before {
+    transform: rotate(90deg);
+  }
+  &.active > ul {
+    height: auto;
+  }
+}
+.hover-primary:hover {
+  color: var($--theme-primary);
+}
+
+/* imported from Bootstrap 4 (bootstrap/_type.scss) */
+// Unstyled keeps list items block level, just removes default browser padding and list-style
+@mixin list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-unstyled {
+  @include list-unstyled;
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+  @include list-unstyled;
+  & > li {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: $list-inline-padding;
+    }
+  }
+}

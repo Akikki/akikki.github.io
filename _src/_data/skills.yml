@@ -1,0 +1,170 @@
+- category: Mathematics & Computer Science Theory
+  style: nested
+  list:
+  - item: Algebra
+    sublist:
+    - abstract algebra
+    - linear algebra
+    - Lie algebras
+    - non-associative algebras
+  - item: General Topology & Functional Analysis
+    sublist:
+    - topological structures
+    - Banach spaces
+    - Hilbert spaces
+    - Sobolev spaces
+    - generalized functions (distributions)
+    - Fourier analysis
+  - item: Control Theory
+    sublist:
+    - linear and non-linear systems
+    - optimal control
+  - item: Signal Processing
+    sublist:
+    - analog and digital signals
+    - continuous and discrete time
+    - statistical signal processing
+    - audio signal processing
+    - time-frequency analysis
+  - item: Numerical Analysis
+    sublist:
+    - linear systems
+    - function interpolation and quadrature
+    - least squares
+    - ODE and PDE numerical approximation (Runge-Kutta, finite difference, finite elements)
+    - curve and surface spline approximation
+    - mesh generation
+  - item: Optimization
+    sublist:
+    - unconstrained and contrained optimization
+    - convex (linear and non-linear) optimization
+    - combinatorial optimization
+    - heuristics and metaheuristics
+    - dynamic programming
+  - item: Probability, Statistics and Data Analysis
+    sublist:
+    - law of large numbers
+    - estimation theory
+    - Markov chains
+    - linear models (simple/multiple linear regression, ANOVA)
+    - multidimensional data analysis (PCA, CA, FA)
+  - item: Combinatorics
+    sublist:
+    - graph theory
+    - matroid theory
+    - computational complexity theory
+    - combinatorial optimization
+  - item: Automata Theory & Language Processing
+    sublist:
+    - automata
+    - formal language theory
+    - lexical and syntaxical analysis
+    - compilers.
+  - item: Mathematical Logic
+    sublist:
+    - first-order logic
+    - lambda calculus
+    - constraint programming (logical and functional)
+  - item: Multi-Agent Systems
+    sublist:
+    - belief-desire-intention model (BDI)
+    - agent-based simulation
+    - Multi-Agent Reinforcement Learning (MARL)
+  - item: Data Science & Machine Learning
+    sublist:
+    - supervised learning (K-means clustering, support-vector machine SVM)
+    - artificial neural networks
+    - reinforcement learning (game theory, Markov decision process)
+
+- category: Machine Languages
+  style: inline
+  list:
+  - item: Basic User
+    sublist:
+    - Fortran
+    - Matlab
+    - Prolog
+    - Lisp
+    - Mathematica
+    - SQL
+    - C#
+  - item: Experienced User
+    sublist:
+    - bash/shell
+    - C
+    - C++
+    - Java
+    - Python
+    - Julia
+    - Javascript
+  - item: Markup
+    sublist:
+    - LaTeX/TeX
+    - HTML+CSS
+    - Markdown
+
+- category: Libraries & Frameworks
+  style: inline
+  list:
+  - item: Numerical
+    sublist:
+    - numpy
+    - scipy
+    - matplotlib
+  - item: Machine Learning
+    sublist:
+    - scikit-learn
+    - PyTorch
+    - TensorFlow
+  - item: Java libraries
+    sublist:
+    - Remote Method Invocation (RMI)
+    - Swing
+  - item: Lexer and Parser Generators
+    sublist:
+    - Lex/Yacc
+    - GNU Flex/Bison
+    - Antlr4
+  - item: Web Development
+    sublist:
+    - Django
+    - Jekyll
+    - WordPress
+  - item: Multi-Agent Systems
+    sublist:
+    - Jason (AgentSpeak)
+    - GAMA platform
+  - item: Game Engine
+    sublist:
+    - Unity 3D
+
+- category: Operating Systems & Tools
+  style: inline
+  list:
+  - item: Operating Systems
+    sublist:
+    - GNU/Linux (Arch and Debian-based distributions)
+    - Microsoft Windows
+  - item: Version Control
+    sublist:
+    - Git
+    - SVN
+  - item: Image Processing
+    sublist:
+    - GIMP
+    - Inkscape
+    - Adobe Photoshop
+    - Adobe Illustrator
+    - Blender
+
+- category: Human Languages
+  style: text
+  list:
+  - item: English
+    more: Proficient - C1/C2 level (TOEIC certificate)
+  - item: French
+    more: Proficient - C1/C2 level (TCF certificate)
+  - item: Arabic
+    more: Native
+  - item: German
+    more: Basic - A2 level (summer course in Germany)

@@ -1,0 +1,70 @@
+$acc-padding: 15px;
+
+$acc-border-width: 3px;
+$acc-border-color: var($--theme-secondary);
+$acc-border-color-active: var($--theme-primary);
+
+$acc-title-color: var($--theme-secondary);
+$acc-subtitle-color: var($--theme-primary);
+$acc-link-color: var($--theme-primary);
+
+$acc-title-size: 20px;
+$acc-subtitle-size: 13px;
+$acc-text-size: 15px;
+
+$acc-hover-color: var($--theme-surface);
+
+.accordeon {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordeon-item {
+  width: 100%;
+  cursor: pointer;
+  border-left-style: solid;
+  border-left-width: $acc-border-width;
+  border-left-color: $acc-border-color;
+  transition: background-color 0.1s ease;
+  
+  &:hover {
+    background-color: $acc-hover-color;
+    transition: background-color 0.1s ease;
+  }
+
+  &.active {
+    border-left-color: $acc-border-color-active;
+    transition: background-color 0.1s ease;
+  }
+  
+  & > .accordeon-title, & > header, & > h1 {
+    padding: $acc-padding;
+    color: $acc-title-color;
+    font-size: $acc-title-size;
+    margin: 0;
+  }
+
+  & > .accordeon-content {
+    padding: 0 $acc-padding;
+    // slide up-down animation
+    height: auto;
+    overflow: hidden;
+    transition: height 0.3s ease;
+
+    .accordeon-subtitle {
+      font-family: $--mono;
+      font-size: $acc-subtitle-size;
+      color: $acc-subtitle-color;
+      margin-block-end: 1rem;
+    }
+
+    p {
+      font-size: $acc-text-size;
+    }
+  }
+
+  a {
+    color: $acc-link-color;
+    white-space: nowrap;
+  }
+}

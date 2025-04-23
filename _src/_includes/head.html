@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+  {% if page.title %}{{ site.title | escape }} | {{ page.title | escape }}
+  {% else %}{{ site.title | escape }}{% endif %}
+</title>
+
+<!-- Preconnect to Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Meta Tags & Open Graph -->
+{% include meta.html %}
+
+<!-- Favicons & PWA -->
+<link rel="manifest" href="/assets/manifest.webmanifest" crossorigin="anonymous">
+<meta name="theme-color" content="var(--theme-background)">
+<link href="/assets/favicons/favicon.ico" rel="icon" sizes="any">
+<link href="/assets/favicons/icon.svg" rel="icon" type="image/svg+xml">
+<link href="/assets/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+{% include gtag.html %}
