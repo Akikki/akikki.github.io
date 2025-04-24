@@ -2,8 +2,8 @@ name: Build & deploy Jekyll to GitHub Pages
 
 on:
   push:
-    branches: 
-      - main    # ← make sure this matches your default branch
+    branches:
+      - main
 
 jobs:
   build-and-deploy:
@@ -36,7 +36,7 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1     # ← make sure this line is exactly like this
+        uses: actions/upload-pages-artifact@v1
         with:
           path: _site
 
