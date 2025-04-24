@@ -1,0 +1,33 @@
+---
+layout: default
+title: Pixel Art Projects
+permalink: /projects/pixel-art/
+---
+
+<h1 class="section-header">Pixel Art Projects</h1>
+{% assign art = site.data.projects | where: "category", "pixel-art" %}
+<div id="projects" class="tabs-container">
+  <div class="tabs">
+    {% for p in art %}
+      <a href="#proj{{ forloop.index0 }}" class="tab">{{ p.title }}</a>
+    {% endfor %}
+  </div>
+  <div class="tabs-content">
+    {% for p in art %}
+      <div class="content" id="proj{{ forloop.index0 }}">
+        <!-- same content structure, minus GitHub/PDF if not needed -->
+        <div class="tab-title">
+          <div class="icons">
+            {% if p.link %}<a href="{{ p.link }}" target="_blank" class="icon" aria-label="Link">{% include icons/external-link.svg %}</a>{% endif %}
+          </div>
+          <h1>{{ p.long_title }}</h1>
+        </div>
+        <ul class="tab-tags list-inline">
+          {% for tag in p.tags %}<li>{{ tag }}</li>{% endfor %}
+        </ul>
+        <h2 class="tab-subtitle">{{ p.date }}</h2>
+        <div class="tab-content">{{ p.description | markdownify }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

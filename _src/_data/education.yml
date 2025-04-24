@@ -1,40 +1,14 @@
-- school: Université Grenoble Alpes / MSTII
-  degree: PhD in Applied Mathematics
-  date: October 2022 - present
-  link: https://doctorat.univ-grenoble-alpes.fr/
+- school: Sorbonne University
+  degree: CMI Mechanical Engineering
+  date: September 2023 – present
+  link: https://www.sorbonne-universite.fr
   description: |
-    Studied mathematical modelling of microbiological systems, nonlinear systems
-    state observation and control through literature and followed courses.
+    Currently pursuing the Cursus Master en Ingénierie Mécanique at Sorbonne University,
+    focusing on mechanical design, computational methods, and interdisciplinary projects.
 
-#- school: Université de Lorraine
-#  degree: Fundamental and Applied Mathematics
-#  date: September 2021 - August 2022
-#  link: https://iecl.univ-lorraine.fr/master-2-mfa/
-#  description: |
-#    Research-oriented Master's program with focus on
-#    PDEs, Lie Algebras, and Control Theory.
-
-- school: INSA Rouen Normandie
-  degree: Mathematical Engineering
-  date: September 2014 - August 2021
-  link: https://www.insa-rouen.fr/en/education/engineering-specialization/mathematical-and-software-engineering
+- school: Lycée Bossuet Notre Dame
+  degree: French Baccalaureate (Mathematics & Physics), “Bien” distinction
+  date: 2020 – 2023
+  link: https://www.lycee-bossuet.fr
   description: |
-    French graduate engineering program (Diplôme d'Ingénieur)
-    with focus on applied mathematics and computer science.
-
-- school: Université de Rouen
-  degree: Theoretical and Applied Computer Science
-  date: September 2019 - August 2020
-  link: https://dpt-info-sciences.univ-rouen.fr/index.php/accueil-mita
-  description: |
-    Research-oriented Master's program with focus on algebra, theoretical
-    computer science, and preparation for PhD.
-
-- school: Little Village School
-  degree: Syrian Scientific Baccalaureate
-  date: June 2013
-  link: https://www.littlevillageschool.com/
-  description: |
-    Rich school program that gave me a head start in later studies.
-
-    Graduation grade 92.17%
+    Specialized in Mathematics and Physics, with strong results across all sciences.

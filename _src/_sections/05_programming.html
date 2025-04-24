@@ -1,0 +1,35 @@
+---
+layout: default
+title: Programming Projects
+permalink: /projects/programming/
+---
+
+<h1 class="section-header">Programming Projects</h1>
+{% assign prog = site.data.projects | where: "category", "programming" %}
+<div id="projects" class="tabs-container">
+  <div class="tabs">
+    {% for p in prog %}
+      <a href="#proj{{ forloop.index0 }}" class="tab">{{ p.title }}</a>
+    {% endfor %}
+  </div>
+  <div class="tabs-content">
+    {% for p in prog %}
+      <div class="content" id="proj{{ forloop.index0 }}">
+        <!-- same inner HTML/Liquid you used before -->
+        <div class="tab-title">
+          <div class="icons">
+            {% if p.github %}<a href="{{ p.github }}" target="_blank" class="icon" aria-label="GitHub">{% include icons/github.svg %}</a>{% endif %}
+            {% if p.pdf    %}<a href="{{ p.link }}/{{ p.pdf }}" target="_blank" class="icon" aria-label="PDF">{% include icons/pdf.svg %}</a>{% endif %}
+            {% if p.link   %}<a href="{{ p.link }}" target="_blank" class="icon" aria-label="Link">{% include icons/external-link.svg %}</a>{% endif %}
+          </div>
+          <h1>{{ p.long_title }}</h1>
+        </div>
+        <ul class="tab-tags list-inline">
+          {% for tag in p.tags %}<li>{{ tag }}</li>{% endfor %}
+        </ul>
+        <h2 class="tab-subtitle">{{ p.date }}</h2>
+        <div class="tab-content">{{ p.description | markdownify }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
