@@ -5,7 +5,7 @@ source:       ./_src
 destination:  ./_site
 
 # meta
-title: Akira
+title: ArrayOfNames
 description: | # appears in search engines preview (keep it under 120 chars)
   Akira is a student in Mechanical engineering
 

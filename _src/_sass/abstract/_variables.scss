@@ -36,13 +36,18 @@ $--theme-on-surface: --theme-on-surface;
 
 // Default dark theme
 $theme-map-dark: (
-    $--theme-background:   #25274D,  //darker
-    $--theme-primary:      #2E9CCA,  //bright
-    $--theme-secondary:    #AAABB8,  //grey
-    $--theme-tertiary:     #29648A,  //light
-    $--theme-surface:      #464866,  //dark
-    $--theme-on-primary:   #25274D,  //darker
-    $--theme-on-secondary: #29648A,  //light
-    $--theme-on-tertiary:  #AAABB8,  //grey
-    $--theme-on-surface:   #2E9CCA,  //bright
+  // Primary backgrounds
+  $--theme-background:   #04080F,  // deep navy
+  $--theme-surface:      #0B1321,  // slightly lighter surface
+
+  // Accent colors
+  $--theme-primary:      #E01A4F,  // your highlight red
+  $--theme-secondary:    #F2F3D9,  // muted slate
+  $--theme-tertiary:     #C11742,  // darker variant of highlight
+
+  // Text colors on those backgrounds
+  $--theme-on-primary:   #F2F3D9,  // your main text color
+  $--theme-on-secondary: #F2F3D9,
+  $--theme-on-tertiary:  #F2F3D9,
+  $--theme-on-surface:   #E01A4F   // pop your highlight on surface
 );
