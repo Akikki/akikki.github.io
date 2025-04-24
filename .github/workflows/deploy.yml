@@ -3,7 +3,7 @@ name: Build & deploy Jekyll to GitHub Pages
 on:
   push:
     branches:
-      - main    # or 'main' if that's your default branch
+      - main      # ← change to 'master' if that really is your default
 
 jobs:
   build-and-deploy:
@@ -12,7 +12,7 @@ jobs:
       JEKYLL_ENV: production
 
     steps:
-      - name: Check out source
+      - name: Check out code
         uses: actions/checkout@v3
 
       - name: Set up Ruby
@@ -35,10 +35,10 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v3
 
-      - name: Upload site artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: _site
 
-      - name: Deploy to Pages
+      - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
