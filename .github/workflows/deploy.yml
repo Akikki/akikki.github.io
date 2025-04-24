@@ -1,9 +1,16 @@
+# .github/workflows/deploy.yml
 name: Build & deploy Jekyll to GitHub Pages
 
+# Trigger on pushes to your default branch:
 on:
   push:
     branches:
-      - main
+      - main    # ← or 'master' if that’s your branch
+
+# Grant the minimum permissions needed to publish pages:
+permissions:
+  pages: write
+  id-token: write
 
 jobs:
   build-and-deploy:
@@ -36,9 +43,9 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4
         with:
           path: _site
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
