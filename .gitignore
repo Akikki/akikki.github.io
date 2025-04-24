@@ -1,0 +1,24 @@
+# production
+/draft/
+/**/*.full.*
+/**/*.backup.*
+/**/*.backup
+/**/*.zip
+
+# blog
+_posts/
+_layouts/post.html
+
+# Jekyll metadata
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler folders
+.bundle/
+vendor/
+
+# Editors
+.vscode/
+.idea/
