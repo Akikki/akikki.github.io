@@ -1,33 +1,31 @@
 ---
-layout: default
-title: Pixel Art Projects
-permalink: /projects/pixel-art/
+title: pixel art projects
+order: "06"
 ---
 
-<h1 class="section-header">Pixel Art Projects</h1>
-{% assign art = site.data.projects | where: "category", "pixel-art" %}
-<div id="projects" class="tabs-container">
-  <div class="tabs">
-    {% for p in art %}
-      <a href="#proj{{ forloop.index0 }}" class="tab">{{ p.title }}</a>
-    {% endfor %}
-  </div>
-  <div class="tabs-content">
-    {% for p in art %}
-      <div class="content" id="proj{{ forloop.index0 }}">
-        <!-- same content structure, minus GitHub/PDF if not needed -->
-        <div class="tab-title">
-          <div class="icons">
-            {% if p.link %}<a href="{{ p.link }}" target="_blank" class="icon" aria-label="Link">{% include icons/external-link.svg %}</a>{% endif %}
-          </div>
-          <h1>{{ p.long_title }}</h1>
-        </div>
-        <ul class="tab-tags list-inline">
-          {% for tag in p.tags %}<li>{{ tag }}</li>{% endfor %}
-        </ul>
-        <h2 class="tab-subtitle">{{ p.date }}</h2>
-        <div class="tab-content">{{ p.description | markdownify }}</div>
-      </div>
-    {% endfor %}
-  </div>
+<h1 class="section-header">Pixel art projects</h1>
+<!-- Grid layout for pixel art thumbnails -->
+<div class="pixel-art-grid" style="display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:1rem;">
+  <!-- Hannah -->
+  <a href="{{ '/assets/img/Hannah.png' | relative_url }}" target="_blank" class="pixel-art-item" title="Hannah" style="position:relative; display:block; width:100%; padding-top:100%; overflow:hidden;">
+    <img src="{{ '/assets/img/Hannah.png' | relative_url }}" alt="Hannah" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover;">
+    <div class="overlay" style="position:absolute; bottom:0; width:100%; background:rgba(0,0,0,0.6); color:#fff; text-align:center; padding:0.2rem; opacity:0; transition:opacity 0.3s;">Hannah</div>
+  </a>
+  <!-- Ellen -->
+  <a href="{{ '/assets/img/Ellen.png' | relative_url }}" target="_blank" class="pixel-art-item" title="Ellen" style="position:relative; display:block; width:100%; padding-top:100%; overflow:hidden;">
+    <img src="{{ '/assets/img/Ellen.png' | relative_url }}" alt="Ellen" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover;">
+    <div class="overlay" style="position:absolute; bottom:0; width:100%; background:rgba(0,0,0,0.6); color:#fff; text-align:center; padding:0.2rem; opacity:0; transition:opacity 0.3s;">Ellen</div>
+  </a>
 </div>
+
+<!-- Hover effect script -->
+<script>
+  document.querySelectorAll('.pixel-art-item').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      item.querySelector('.overlay').style.opacity = 1;
+    });
+    item.addEventListener('mouseleave', () => {
+      item.querySelector('.overlay').style.opacity = 0;
+    });
+  });
+</script>

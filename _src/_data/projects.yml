@@ -1,16 +1,28 @@
-- title: MIR
-  long_title: Music Information Retrieval - Master's Thesis
-  date: March 2020
-  github: https://github.com/rand-asswad/muallef
-  link: https://rand-asswad.github.io/muallef
+- title: Image Board
+  long_title: Simple reference canvas app
+  date: 2025
+  github: https://github.com/Akikki
+  link: https://github.com/Akikki/ImageBoard
   pdf: book.pdf
   category: programming         # ← new
   description: |
-    …
+    A image board system made to streamline art creation. Import or paste images to move or transform them around in a dedicated window. 
   tags:
-    - music-information-retrieval
-    - signal-processing
+    - Python
+    - PyQT
     # …
+- title: Copy and Paste
+  long_title: A GUI app to easily use Copy and Paste fonts and Kaomoji (Japanese )
+  date: 2025
+  github: https://github.com/Akikki
+  link: https://github.com/Akikki/ImageBoard
+  pdf: book.pdf
+  category: programming         # ← new
+  description: A small GUI app made in PyQT to use copy and paste text elements. Support the ability to grow the default collection (Maybe database soon ?)
+  tags:
+  - Python
+  - PyQT
+  # …
 - title: My Sprite Pack
   long_title: Retro Sprite Pack
   date: 2024
