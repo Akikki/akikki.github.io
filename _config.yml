@@ -1,11 +1,11 @@
 # site variables
-url:          "https://rand-asswad.xyz"
+url:          "https://akikki.github.io"
 baseurl:      ""
 source:       ./_src
 destination:  ./_site
 
 # meta
-title: Akira | ArrayOfNames
+title: Akira
 description: | # appears in search engines preview (keep it under 120 chars)
   Akira is a student in Mechanical engineering
 
