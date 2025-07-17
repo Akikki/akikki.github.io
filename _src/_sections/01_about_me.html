@@ -6,9 +6,27 @@ order: "01"
 <h1 class="section-header">A few things about me</h1>
 <ul class="list grid-list">
   {% for c in site.data.about_me %}
-    <li>
-      <h1 class="text-tertiary">{{ c.head }}</h1>
-      {{ c.body | markdownify }}
-    </li>
+    {% unless c.selected_work %}
+      <li>
+        <h1 class="text-tertiary">{{ c.head }}</h1>
+        {{ c.body | markdownify }}
+      </li>
+    {% endunless %}
   {% endfor %}
 </ul>
+
+<!-- Selected Work Logo Bar -->
+{% assign work = site.data.about_me | where: "selected_work", true | first %}
+{% if work %}
+  <div class="selected-work-bar">
+    <div class="logo-scroll">
+      {% for logo in work.logos %}
+        {% assign img_path = "/assets/featured/" | append: logo.image %}
+        <a href="{{ img_path }}" target="_blank" rel="noopener">
+          <img src="{{ img_path }}" alt="{{ logo.alt }}">
+        </a>
+      {% endfor %}
+    </div>
+    <p class="selected-label">selected work</p>
+  </div>
+{% endif %}

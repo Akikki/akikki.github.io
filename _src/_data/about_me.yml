@@ -17,3 +17,12 @@
   body: |
     For me, the perfect mix is bouncing between competitive, grindy games and strange little indie gems. That balance keeps things fun.
     Also, please play *The Stanley Parable*, it's an experience everyone should have.
+
+- selected_work: true
+  logos:
+    - image: log1.png
+      alt: Hoya Lacombe
+    - image: log2.png
+      alt: Pixel Club
+    - image: log3.png
+      alt: Simulatronic

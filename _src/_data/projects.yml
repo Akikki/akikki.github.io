@@ -23,13 +23,15 @@
   - Python
   - PyQT
   # …
-- title: My Sprite Pack
-  long_title: Retro Sprite Pack
-  date: 2024
-  link: /assets/pixel/my-sprites.zip
-  category: pixel-art
-  description: |
-    A collection of 16×16 character sprites and animations in PNG format.
+- title: Romarin
+  long_title: A system to use AI inference to control the Romarin Submarine.
+  date: 2025
+  github: https://github.com/Akikki
+  link: https://github.com/Akikki/ImageBoard
+  pdf: book.pdf
+  category: programming         # ← new
+  description: Made during my second year at Sorbonne along with Mathieu De Rooster, Kadiatou Yara & Karol Blaszczyszyn , it controls and guides a small batery powered submarine. Required extensive optimization to fit the use of an AI model on a Low end Raspberry Pi
   tags:
-    - pixel-art
-    - sprites
+  - Python
+  - PyQT
+  # …

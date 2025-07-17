@@ -1,0 +1,31 @@
+.selected-work-bar {
+  margin-top: 2rem;
+  text-align: center;
+
+  .logo-scroll {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    img {
+      height: 200px; // much bigger now
+      opacity: 0.85;
+      transition: opacity 0.2s ease;
+    }
+
+    img:hover {
+      opacity: 1;
+    }
+  }
+
+  .selected-label {
+    font-size: 1rem;
+    color: var(--theme-on-surface);
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+  }
+}
