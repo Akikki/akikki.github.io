@@ -15,8 +15,7 @@
   long_title: A GUI app to easily use Copy and Paste fonts and Kaomoji (Japanese )
   date: 2025
   github: https://github.com/Akikki
-  link: https://github.com/Akikki/ImageBoard
-  pdf: book.pdf
+  link: https://github.com/Akikki/JapEmoji
   category: programming         # ← new
   description: A small GUI app made in PyQT to use copy and paste text elements. Support the ability to grow the default collection (Maybe database soon ?)
   tags:
@@ -27,7 +26,7 @@
   long_title: A system to use AI inference to control the Romarin Submarine.
   date: 2025
   github: https://github.com/Akikki
-  link: https://github.com/Akikki/ImageBoard
+  link: https://github.com/Akikki/Romarin
   pdf: book.pdf
   category: programming         # ← new
   description: Made during my second year at Sorbonne along with Mathieu De Rooster, Kadiatou Yara & Karol Blaszczyszyn , it controls and guides a small batery powered submarine. Required extensive optimization to fit the use of an AI model on a Low end Raspberry Pi
