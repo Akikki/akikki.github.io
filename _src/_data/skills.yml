@@ -2,26 +2,36 @@
   style: inline
   list:
     - item: Python
-      more: Advanced
+      sublist: [Advanced]
     - item: C#
-      more: Basic
+      sublist: [Basic]
     - item: Java
-      more: Basic
+      sublist: [Basic]
     - item: C
-      more: Basic
+      sublist: [Basic]
+    - item: Lua
+      sublist: [Basic]
 
 - category: Software & Tools
   style: inline
   list:
     - item: RoboDK
+      sublist: []
     - item: Robotics Toolbox (Python)
+      sublist: []
     - item: FTP & SSH
+      sublist: []
     - item: LaTeX
+      sublist: []
     - item: CATIA
+      sublist: []
     - item: Photoshop
+      sublist: []
 
 - category: Languages
   style: inline
   list:
     - item: English
-      more: Cambridge C1 Advanced (199/210)
+      sublist: [Cambridge C1 Advanced (199/210)]
+    - item: French
+      sublist: [Native]

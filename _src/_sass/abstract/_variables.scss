@@ -49,5 +49,20 @@ $theme-map-dark: (
   $--theme-on-primary:   #F2F3D9,  // your main text color
   $--theme-on-secondary: #F2F3D9,
   $--theme-on-tertiary:  #F2F3D9,
-  $--theme-on-surface:   #E01A4F   // pop your highlight on surface
+  $--theme-on-surface:   #E01A4F   // pop your hisghlight on surface
 );
+$theme-map-light: (
+  $--theme-background:   #F2F2F2,
+  $--theme-surface:      #afd3fd97,
+
+  $--theme-primary:      #0B4B6F,
+  $--theme-secondary:    #3A3A3A,
+  $--theme-tertiary:     #4D869C,
+
+  $--theme-on-primary:   #F2F2F2,
+  $--theme-on-secondary: #F2F2F2,
+  $--theme-on-tertiary:  #F2F2F2,
+  $--theme-on-surface:   #0B4B6F  // refined readable text
+);
+
+

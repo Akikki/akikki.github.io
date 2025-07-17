@@ -7,7 +7,7 @@ order: "01"
 <ul class="list grid-list">
   {% for c in site.data.about_me %}
     <li>
-      <h1>{{ c.head }}</h1>
+      <h1 class="text-tertiary">{{ c.head }}</h1>
       {{ c.body | markdownify }}
     </li>
   {% endfor %}
