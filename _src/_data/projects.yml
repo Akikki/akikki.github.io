@@ -3,14 +3,9 @@
   date: 2025
   github: https://github.com/Akikki
   link: https://github.com/Akikki/ImageBoard
-  pdf: book.pdf
+
   category: programming         # ← new
   description: |
-    A image board system made to streamline art creation. Import or paste images to move or transform them around in a dedicated window. 
-  tags:
-    - Python
-    - PyQT
-    # …
 - title: Copy and Paste
   long_title: A GUI app to easily use Copy and Paste fonts and Kaomoji (Japanese )
   date: 2025
@@ -27,7 +22,6 @@
   date: 2025
   github: https://github.com/Akikki
   link: https://github.com/Akikki/Romarin
-  pdf: book.pdf
   category: programming         # ← new
   description: Made during my second year at Sorbonne along with Mathieu De Rooster, Kadiatou Yara & Karol Blaszczyszyn , it controls and guides a small batery powered submarine. Required extensive optimization to fit the use of an AI model on a Low end Raspberry Pi
   tags:
