@@ -6,7 +6,7 @@
 
 - head: I love pixel art & 3D
   body: |
-    While my drawing skills are questionable at best, I still have a lot of fun making simple 2D pixel art of characters and things I like as well as small 3D models & effects.
+    While my drawing skills are questionable at best, I still have a lot of fun making simple 2D pixel art of characters and things I like as well as small 3D models & wallpapers.
     Just… maybe don’t stare too long at the perspective ^^"
 
 - head: I love Cinema
@@ -34,4 +34,6 @@
       alt: Simulatronic
     - image: log7.jpg
       alt: Simulatronic
-      
+    - image: log8.mp4
+      alt: Turntable Animation
+      type: video

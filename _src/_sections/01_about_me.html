@@ -22,11 +22,22 @@ order: "01"
     <div class="logo-scroll">
       {% for logo in work.logos %}
         {% assign img_path = "/assets/featured/" | append: logo.image %}
-        <a href="{{ img_path }}" target="_blank" rel="noopener">
-          <img src="{{ img_path }}" alt="{{ logo.alt }}">
+        <a href="{{ img_path }}" target="_blank" rel="noopener" style="display:inline-block;">
+          {% if logo.type == "video" or logo.image contains ".mp4" %}
+            <video autoplay muted loop playsinline
+              style="max-height:200px; width:auto; border-radius:8px; vertical-align:middle;">
+              <source src="{{ img_path }}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          {% else %}
+            <img src="{{ img_path }}" alt="{{ logo.alt }}"
+              style="max-height:200px; width:auto; border-radius:8px; vertical-align:middle;">
+          {% endif %}
         </a>
       {% endfor %}
     </div>
     <p class="selected-label">selected work</p>
   </div>
 {% endif %}
+
+
